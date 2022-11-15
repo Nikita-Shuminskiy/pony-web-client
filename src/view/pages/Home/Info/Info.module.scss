@@ -1,0 +1,64 @@
+@import "src/globalStyles/colors";
+
+.started{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 110px;
+
+	@media (max-width: 1200px) {
+		justify-content: space-evenly;
+	}
+
+	@media (max-width: 700px) {
+		margin-bottom: 20px;
+	}
+
+	&-reverse{
+		flex-direction: row-reverse;
+	}
+
+	&-info,&-bg {
+		width: 45%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: 700px) {
+			width: 51%;
+		}
+	}
+
+	&-info {
+		padding-top: 70px;
+		align-items: start;
+	}
+
+	&-bg{
+		img{
+			max-width: 458px;
+			max-height: 564px;
+
+			@media (max-width: 900px) {
+				margin-top: 40px;
+				width: 70%;
+			}
+		}
+	}
+}
+
+.text {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 35px;
+	color: $black;
+	@media (max-width: 700px) {
+		font-size: 18px;
+		line-height: 35px;
+	}
+}

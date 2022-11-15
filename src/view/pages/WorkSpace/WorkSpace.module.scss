@@ -1,0 +1,15 @@
+@import "src/globalStyles/colors";
+
+.work-space {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  .work-space {
+    justify-content: center;
+    flex-direction: column;
+  }
+}

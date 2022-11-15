@@ -1,0 +1,31 @@
+@import "src/globalStyles/colors";
+
+
+.chart-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 400px;
+
+  &__wrapper {
+    height: auto;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wallet-select {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  &__date-select {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  &__category_block {
+    margin-bottom: 10px;
+  }
+}
